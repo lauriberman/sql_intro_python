@@ -88,8 +88,11 @@ def fetch():
     conn = sqlite3.connect('secundaria.db')
     c = conn.cursor()
 
-    #c.execute('SELECT * FROM estudiante')
+    #Para leer todas las filas y obtener todos los datos juntos:
+    # c.execute('SELECT * FROM estudiante')
     #data = c.fetchall()
+
+    #Para leer todas las filas y obtener los datos de a uno:
 
     c.execute('SELECT * FROM estudiante')
     while True:
